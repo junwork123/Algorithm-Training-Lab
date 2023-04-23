@@ -10,8 +10,12 @@ import playground.core.Result;
         Title = "Sample",
         Url = "https://www.acmicpc.net/problem/0")
 public class Sample extends Problem {
+    public Sample(Input input) {
+        super(input);
+    }
+
     @Override
-    protected void prepare(Input input) {
+    protected void prepare() {
 
     }
 

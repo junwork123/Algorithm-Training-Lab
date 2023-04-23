@@ -1,10 +1,16 @@
 package playground.core;
 
 public abstract class Problem {
-    public final Result solve(Input input){
-        prepare(input);
+    private final Input input;
+
+    public Problem(Input input) {
+        this.input = input;
+    }
+
+    public final Result solve(){
+        prepare();
         return calculate();
     }
-    protected abstract void prepare(Input input);
+    protected abstract void prepare();
     protected abstract Result calculate();
 }
