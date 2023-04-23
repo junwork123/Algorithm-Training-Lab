@@ -1,7 +1,7 @@
 package playground.core;
 
 public abstract class Problem {
-    private final Input input;
+    protected final Input input;
 
     public Problem(Input input) {
         this.input = input;
