@@ -1,5 +1,7 @@
 package utils;
 
+import java.io.*;
+
 public class Utils {
     private static void printLine() {
         System.out.println("========================================");
@@ -17,5 +19,10 @@ public class Utils {
         System.out.println(msg);
         printArray(array);
         printLine();
+    }
+
+    public static String getInput() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        return bf.readLine();
     }
 }

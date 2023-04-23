@@ -13,7 +13,7 @@ public class Result {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Result result)) return false;
-        return value == result.value;
+        return Objects.equals(value, result.value);
     }
 
     @Override
